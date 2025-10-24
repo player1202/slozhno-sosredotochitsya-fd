@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="color-scheme" content="dark light" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      href="./images/favicon.svg
+    "
+      type="image/svg"
+    />
+    <link rel="apple-touch-icon" href="./images/" />
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
+    <nav class="header__theme-menu">
+      <ul class="header__theme-menu-list">
+        <li class="header__theme-menu-item">
+          <button
+            class="header__theme-menu-button header__theme-menu-button_type_light"
+          >
+            День
+          </button>
+        </li>
+        <li class="header__theme-menu-item">
+          <button
+            class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+            disabled
+          >
+            Авто
+          </button>
+        </li>
+        <li class="header__theme-menu-item">
+          <button
+            class="header__theme-menu-button header__theme-menu-button_type_dark"
+          >
+            Неон
+          </button>
+        </li>
+      </ul>
+    </nav>
     <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
+      <h1 class="header__title">no focus</h1>
+      <p class="header__subtitle title-decor">
+        Что делать, когда не можешь делать ничего Или почему нам так сложно
+        сконцентрироваться, особенно когда очень надо
+      </p>
     </header>
+    <main class="main">
+      <section class="section">
+        <h5 class="section__title">Почему сосредоточиться так сложно</h5>
+        <article class="card">
+          <h6 class="card__title title-decor">Многозадачность</h6>
+          <p class="card__text">
+            Особенно сложно сосредоточиться, когда задач много и все они —
+            важные. Где же легендарная многозадачность, когда она так нужна вам
+            (и всем нанимающим менеджерам этого мира)? А дело в том, что её
+            просто не существует. Исследователи
+            <a class="card__text-link" href="#0">выяснили</a>, что мозгу тяжело
+            концентрироваться даже на двух делах одновременно. А когда в поле
+            внимания попадает несколько важных задач, организм паникует и
+            выделяет кортизол и адреналин — «гормоны стресса». Из-за этого мы
+            работаем невнимательно: ошибаемся и быстро устаём.
+          </p>
+        </article>
+      </section>
+      <section class="section">
+        <h5 class="section__title"></h5>
+        <article class="card">
+          <h6 class="card__title title-decor"></h6>
+        </article>
+      </section>
+      <section class="section">
+        <h5 class="section__title"></h5>
+        <article class="card">
+          <h6 class="card__title title-decor"></h6>
+        </article>
+      </section>
+      <section class="section">
+        <h5 class="section__title"></h5>
+        <article class="card">
+          <h6 class="card__title title-decor"></h6>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
