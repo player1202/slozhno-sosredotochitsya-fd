@@ -241,7 +241,7 @@
     grid-column: 1 / 2;
   }
   .columns {
-    grid-column: 1 / 4;
+    grid-column: 1 / 4;/**/
   }
   .gallery {
     grid-column: 1 / 4;
