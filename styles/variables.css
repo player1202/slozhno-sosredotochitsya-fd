@@ -3,9 +3,17 @@
   и их переопределение под различные устройства
 */
 :root {
-    --accent-color: #ff0070;
-    --text-color:#F1B2CE;
-    --decoration-color: var(--accent-color);
-    --background-color: #000028;
-    --font-family: 'IBM Plex mono', monospace;
+  --background-image: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --decoration-color: var(--accent-color);
+  --background-color: #000028;
+  --font-family: "IBM Plex mono", monospace;
+  --header-color: #db00ff;
+  --title-color: #000028;
+  --title-section: var(--accent-color);
+  --header-subtitle-color:var(--title-color);
+  --border-link:#FF0070;
+;
+
 }
