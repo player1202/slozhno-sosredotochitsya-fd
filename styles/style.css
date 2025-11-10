@@ -47,7 +47,6 @@
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   block-size: 25px;
-  justify-self: end;
   color: var(--accent-color);
   text-transform: uppercase;
   visibility: var(--decoration-light);
@@ -71,7 +70,7 @@
   display: grid;
   gap: 10px;
   font-family: var(--font-family);
-  margin-block-start:-147px;
+  margin-block-start: -147px;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -102,7 +101,6 @@
   grid-column: 1 / 3;
   justify-self: start;
   line-height: 83%;
-  font-size: 116px;
   font-weight: 700;
   gap: 20px;
   margin-block-start: -190px;
@@ -211,6 +209,7 @@
   margin-block-start: 95px;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 .footer__title {
   text-shadow: 2px 2px var(--accent-color);
@@ -222,7 +221,7 @@
   .header__title {
     font-size: var(--header-title-for-desktop);
     margin-block-end: -350px;
-    margin-inline-start:-10px;
+    margin-inline-start: -10px;
   }
   .header__decoration-dark {
     margin-block-start: 10px;
@@ -331,14 +330,13 @@
   .header__description {
     min-inline-size: 491px;
     grid-column: 2 / 4;
+    margin-block-start: -86px;
+    height: min-content;
   }
   .header__title {
     margin-block-start: -440px;
   }
-  .header__description {
-    margin-block-start: -86px;
-    height: min-content;
-  }
+
   .decorated-zone::before {
     margin-block-start: 10px;
     margin-inline-end: 10px;
