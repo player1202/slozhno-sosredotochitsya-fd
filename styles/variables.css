@@ -12,8 +12,9 @@
   --header-color: #db00ff;
   --title-color: #000028;
   --title-section: var(--accent-color);
-  --header-subtitle-color:var(--title-color);
-  --border-link:#FF0070;
-;
-
+  --header-subtitle-color: var(--title-color);
+  --border-button: #ff0070;
+  --header-title-for-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --header-title-for-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --decoration-light: visible;
 }

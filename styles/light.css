@@ -18,6 +18,8 @@
   --title-color: #353430;
   --title-section: var(--title-color);
   --header-subtitle-color: var(--title-color);
+  --decoration-light: hidden;
+  --border-button:#353430;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -30,5 +32,7 @@
     --title-color: #353430;
     --title-section: var(--title-color);
     --header-subtitle-color: var(--title-color);
+    --decoration-light: hidden;
+    --border-button:#353430;
   }
 }

@@ -16,7 +16,9 @@
   --decoration-color: var(--accent-color);
   --background-color: #000028;
   --header-color: #db00ff;
+  --border-button: #ff0070;
   --title-color: #000028;
   --title-section: #ff0070;
-    --header-subtitle-color:var(--title-color);
+  --header-subtitle-color: var(--title-color);
+  --decoration-light: visible;
 }
