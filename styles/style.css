@@ -51,7 +51,6 @@
   text-transform: uppercase;
   visibility: var(--decoration-light);
   line-height: 25px;
-
 }
 .header__decoration-dark::after {
   align-self: center;
@@ -61,7 +60,7 @@
   margin-inline-end: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px #FF0070;
+  box-shadow: 0px 0px 4px 2px #ff0070;
 }
 .header__theme-menu {
   grid-column: 1 / 3;
@@ -92,8 +91,8 @@
   outline: none;
 }
 .header__theme-menu-button:hover {
-  outline:none;
-  border: 1px solid #FF007066
+  outline: none;
+  border: 1px solid #ff007066;
 }
 .header__title {
   font-family: var(--font-family);
@@ -120,11 +119,16 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  justify-self: end;
-  margin-block-start: -220px;
+}
+.header__description-container {
   color: var(--header-subtitle-color);
-
+  justify-self: end;
+  min-inline-size: 355px;
+  align-self: center;
+  inline-size: fit-content;
+  width: 100%;
   grid-column: 1 / 4;
+  margin-block-start: -200px;
 }
 .main {
   display: grid;
@@ -139,7 +143,7 @@
   margin-block-start: -155px;
 }
 .concentration-factors {
-  margin-block-start: -20px;
+  margin-block-start: -16px;
 }
 .concentration-tips {
   margin-block-start: -20px;
@@ -154,12 +158,11 @@
 }
 .card__title {
   color: var(--title-color);
-  
 }
 .card__text {
   font-family: var(--font-family);
   font-weight: 400;
-  margin-block-start: 10px;
+  margin-block-start: 9px;
   margin-block-end: 20px;
   font-size: 18px;
   line-height: 23.4px;
@@ -202,15 +205,15 @@
   margin-block-start: -20px;
 }
 .picture:last-child {
-  margin-block-end: 40px;
   height: 100%;
 }
 .footer {
   display: grid;
   min-block-size: 668px;
-  margin-block-start: 95px;
+  margin-block-start: -55px;
   align-items: center;
   justify-content: center;
+  min-block-size: 667px;
   height: 100vh;
 }
 .footer__title {
@@ -230,11 +233,12 @@
     margin-inline-end: 10px;
   }
 
-  .header__description {
+  .header__description-container {
     grid-column: 2 / 4;
-    height: 28%;
+    height: 27%;
     min-inline-size: 364px;
     margin-block-start: 280px;
+    padding-inline-end: 10px;
   }
   .decorated-zone::after {
     margin-block-end: -152px;
@@ -251,8 +255,11 @@
   .section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-block-start: 160px;
+    margin-block-start: 162px;
     margin-inline-start: 10px;
+  }
+  .section:first-of-type .card {
+    margin-inline: 10px;
   }
   .section__title {
     grid-row: 1 / 3;
@@ -271,10 +278,16 @@
     margin-block-start: -3px;
   }
   .columns {
+    margin-block-start: -7px;
+    margin-inline-end: 10px;
     grid-column: 1 / 4;
   }
+
   .concentration-tips {
     margin-block-start: -20px;
+  }
+  .concentration-tips .card__title {
+    margin-inline: 10px;
   }
   .concentration-tips .card__text:nth-of-type(1) {
     padding-inline: 10px;
@@ -302,6 +315,7 @@
   }
   .card__title-picture {
     grid-column: 1 / 4;
+    margin-inline-end: 10px;
   }
   .picture {
     object-fit: cover;
@@ -325,15 +339,14 @@
   }
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-block-start: 230px;
+    margin-block-start: 280px;
   }
 }
 @media (width >= 1024px) {
-  .header__description {
+  .header__description-container {
     min-inline-size: 491px;
     grid-column: 2 / 4;
-    margin-block-start: -86px;
-    height: min-content;
+    margin-block-start: -40px;
   }
   .header__title {
     margin-block-start: -440px;
@@ -349,6 +362,10 @@
   .section {
     margin-block-start: -95px;
   }
+  .section:first-of-type .card {
+    margin-inline-start: 3px;
+    margin-block-start: 1px;
+  }
   .concentration-factors {
     margin-block-start: -18px;
   }
@@ -360,11 +377,28 @@
     justify-content: start;
     margin-block-start: -10px;
   }
-
+  .card-first .card__title {
+    margin-inline-start: 0px;
+    margin-inline-end: 13px;
+  }
+  .card-first .card__text {
+    margin-inline-end: 10px;
+  }
+  .card-second .card__title {
+    margin-inline-end: 6px;
+  }
+  .card-second .card__text {
+    margin-inline-start: 7px;
+  }
+  .card-third .card__title {
+    margin-inline-start: 13px;
+  }
+  .card-third .card__text {
+    margin-inline-start: 14px;
+  }
   .column {
     flex: 1;
   }
-
   .column:last-child {
     margin-right: 0;
   }
@@ -378,12 +412,16 @@
     margin-inline-start: 10px;
     grid-auto-flow: column;
   }
-  .concentration-tips {
-    margin-block-start: 6px;
-    margin-inline-start: 0px;
-  }
   .concentration-tips .section__title {
-    margin-inline-start: 0px;
+    margin-inline-start: -10px;
+    margin-block-start:65px;
+  }
+  .concentration-tips .card__title{
+    margin-block-start:75px;
+    margin-inline-start:4px;
+  }
+  .concentration-tips .card{
+    margin-inline-start:-6px;
   }
   .pictures {
     margin-block-start: -20px;
@@ -395,6 +433,6 @@
     block-size: 433px;
   }
   .footer__title {
-    margin-block-start: -49px;
+    margin-block-start: 20px;
   }
 }

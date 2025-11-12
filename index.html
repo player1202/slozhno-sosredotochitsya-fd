@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="color-scheme" content="dark light" >
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="./fonts/fonts.css" >
-    <link rel="stylesheet" href="./styles/variables.css" >
-    <link rel="stylesheet" href="./styles/globals.css" >
-    <link rel="stylesheet" href="./styles/style.css" >
-    <link rel="stylesheet" href="./styles/dark.css" >
-    <link rel="stylesheet" href="./styles/light.css" >
-    <link rel="icon" href="./images/favicon.ico" sizes="any" >
-    <link rel="icon" href="./images/favicon.svg" type="image/svg" >
-    <link rel="apple-touch-icon" href="./images/mobile-icon.png" >
+    <meta name="color-scheme" content="dark light" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
   </head>
@@ -47,10 +47,15 @@
         </ul>
       </nav>
       <h1 class="header__title">no focus</h1>
-      <p class="header__description title-decor">
-        Что делать, когда не можешь делать ничего Или почему нам так сложно
-        сконцентрироваться, особенно когда очень надо
-      </p>
+      <div class="header__description-container">
+        <p class="header__description title-decor">
+          Что делать, когда не можешь делать ничего
+        </p>
+        <p class="header__description title-decor">
+          Или почему нам так сложно сконцентрироваться, особенно когда очень
+          надо
+        </p>
+      </div>
     </header>
     <main class="main">
       <section class="section">
@@ -87,7 +92,7 @@
         <h2 class="section__title">Что снижает концентрацию внимания?</h2>
         <div class="columns">
           <div class="column">
-            <article class="card">
+            <article class="card-first">
               <h3 class="card__title title-decor">Многозадачность</h3>
               <p class="card__text">
                 Как концентрация может снижаться из-за… концентрации? Любая
@@ -100,7 +105,7 @@
             </article>
           </div>
           <div class="column">
-            <article class="card">
+            <article class="card-second">
               <h3 class="card__title title-decor">Еда</h3>
               <p class="card__text">
                 «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -113,7 +118,7 @@
             </article>
           </div>
           <div class="column">
-            <article class="card">
+            <article class="card-third">
               <h3 class="card__title title-decor">Гаджеты</h3>
               <p class="card__text">
                 Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -127,7 +132,6 @@
               </p>
             </article>
           </div>
-          
         </div>
       </section>
 
@@ -192,33 +196,31 @@
             src="./images/sunset.png"
             loading="lazy"
             alt="Восход солнца на фоне гор"
-          >
+          />
           <img
             class="picture"
             src="./images/ice-cream.png"
             loading="lazy"
             alt="Мороженое в тарелке"
-
-          >
+          />
           <img
             class="picture"
             src="./images/tape.png"
             loading="lazy"
             alt="Кассета"
-
-          >
+          />
           <img
             class="picture"
             src="./images/books.png"
             loading="lazy"
             alt="Стока книг на столе"
-          >
+          />
           <img
             class="picture"
             src="./images/street.png"
             loading="lazy"
             alt="Переулок"
-          >
+          />
         </article>
       </section>
     </main>
