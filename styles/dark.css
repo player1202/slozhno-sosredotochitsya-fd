@@ -21,4 +21,5 @@
   --title-section: #ff0070;
   --header-subtitle-color: var(--title-color);
   --decoration-light: visible;
+  --hover-border:#FF007066;
 }
