@@ -154,7 +154,7 @@
 }
 .card__title {
   color: var(--title-color);
-  margin-inline: 10px;
+  
 }
 .card__text {
   font-family: var(--font-family);
