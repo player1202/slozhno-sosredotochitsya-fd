@@ -86,13 +86,17 @@
   color: var(--decoration-color);
   cursor: pointer;
 }
+.header__theme-menu-button_active{
+  outline:none;
+  border:1px solid var(--border-button);
+}
 .header__theme-menu-button:focus-visible {
-  border-bottom: 0.1px solid var(--border-button);
+  border-bottom: 1px solid var(--border-button);
   outline: none;
 }
 .header__theme-menu-button:hover {
   outline: none;
-  border: 1px solid #ff007066;
+  border: 1px solid var(--hover-border);
 }
 .header__title {
   font-family: var(--font-family);
@@ -119,6 +123,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
+  color:var(--title-color);
 }
 .header__description-container {
   color: var(--header-subtitle-color);
@@ -188,6 +193,7 @@
 .card .card__subtitle {
   margin-block-start: 20px;
   margin-block-end: 10px;
+  color:var(--title-color);
 }
 .card__title-picture {
   margin-block-end: 10px;
@@ -213,7 +219,6 @@
   margin-block-start: -55px;
   align-items: center;
   justify-content: center;
-  min-block-size: 667px;
   height: 100vh;
 }
 .footer__title {
@@ -416,11 +421,11 @@
     margin-inline-start: -10px;
     margin-block-start:65px;
   }
-  .concentration-tips .card__title{
+  .concentration-tips .card__title {
     margin-block-start:75px;
     margin-inline-start:4px;
   }
-  .concentration-tips .card{
+  .concentration-tips .card {
     margin-inline-start:-6px;
   }
   .pictures {
