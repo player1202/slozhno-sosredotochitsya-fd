@@ -282,11 +282,7 @@
   }
   .concentration-factors {
     margin-block-start: 33px;
-    padding-inline-end: 0px;
-  }
-  .concentration-factors .card {
-    min-inline-size: 315px;
-    padding-inline-end: 20px;
+    padding-inline-end:20px;
   }
   .concentration-tips {
     padding-block-start: 30px;
@@ -360,21 +356,11 @@
   .section:first-of-type .card {
     margin-inline-start: 3px;
   }
-  .card-first .card__title {
-    margin-inline-end: 13px;
-    padding-inline-start: 0px;
+  .concentration-factors{
+    min-inline-size: 315px;
   }
-  .card-first .card__text {
-    padding-inline-end: 10px;
-  }
-  .card-second .card__title {
-    margin-inline: 7px;
-  }
-  .card-second .card__text {
-    margin-inline-start: 8px;
-  }
-  .card-third {
-    margin-inline-start: 13px;
+  .concentration-factors .card{
+    padding-inline-end:20px;
   }
   .columns {
     display: flex;
