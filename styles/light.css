@@ -22,6 +22,7 @@
   --border-button:#353430;
   --header-color:#FFC2E6;
   --hover-border:#32312D66;
+  --border-link:#353430;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -38,5 +39,6 @@
     --border-button:#353430;
     --header-color:#FFC2E6;
     --hover-border: #32312D66;
+    --border-link:#353430;
   }
 }

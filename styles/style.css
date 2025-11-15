@@ -189,7 +189,7 @@
   outline: none;
 }
 .card__text-link:focus-visible {
-  border: 1px solid var(--border-link);
+ outline: 1px solid var(--border-link)
 }
 .card__text-link:hover {
   border-bottom: 1px solid var(--text-color);
@@ -281,7 +281,12 @@
     padding-inline-end: 10px;
   }
   .concentration-factors {
-    margin-block-start: 32px;
+    margin-block-start: 33px;
+    padding-inline-end: 0px;
+  }
+  .concentration-factors .card {
+    min-inline-size: 315px;
+    padding-inline-end: 20px;
   }
   .concentration-tips {
     padding-block-start: 30px;
@@ -290,25 +295,13 @@
     margin-inline: 10px;
   }
   .columns {
-    margin-inline-end: 10px;
     grid-column: 1 / 4;
+    flex-wrap: wrap;
   }
   .concentration-tips .card__title {
     margin-inline: 10px;
   }
-  .concentration-tips .card__text:nth-of-type(1) {
-    padding-inline: 10px;
-  }
-  .concentration-tips .card__text:nth-of-type(2) {
-    padding-inline: 10px;
-  }
-  .concentration-tips .card__text:nth-of-type(3) {
-    padding-inline: 10px;
-  }
-  .concentration-tips .card__text:nth-of-type(4) {
-    padding-inline: 10px;
-  }
-  .concentration-tips .card__text:nth-of-type(5) {
+  .concentration-tips .card__text {
     padding-inline: 10px;
   }
   .pictures {
