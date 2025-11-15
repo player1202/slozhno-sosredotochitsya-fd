@@ -358,6 +358,7 @@
   }
   .concentration-factors{
     min-inline-size: 315px;
+    padding-inline-end:0px;
   }
   .concentration-factors .card{
     padding-inline-end:20px;
