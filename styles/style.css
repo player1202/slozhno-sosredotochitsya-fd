@@ -356,11 +356,11 @@
   .section:first-of-type .card {
     margin-inline-start: 3px;
   }
-  .concentration-factors{
+  .concentration-factors {
     min-inline-size: 315px;
     padding-inline-end:0px;
   }
-  .concentration-factors .card{
+  .concentration-factors .card {
     padding-inline-end:20px;
   }
   .columns {
